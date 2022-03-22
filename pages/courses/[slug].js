@@ -24,11 +24,12 @@ export default function Course({course}) {
 					image={course.coverImage}
 				/>
 			</div>
-			<div className='mb-24'>
-				<Keypoints points={course.wsl} />
-
+			<div className='mb-24 '>
+				<div className='mb-6'>
+					<Keypoints points={course.wsl} />
+				</div>
 				{courseState && (
-					<div className='max-w-5xl mx-auto'>
+					<div className='max-w-5xl mx-auto '>
 						{courseState === 'purchased' && (
 							<Message type='warning' className='font-bold'>
 								Course is purchased and waiting for activation. Process can take up to 24
