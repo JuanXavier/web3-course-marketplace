@@ -1,34 +1,118 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web3 Course Marketplace
 
-## Getting Started
+![Imgur](https://i.imgur.com/HSrQNVi.png)
 
-First, run the development server:
+> Rinkeby Testnet Course Marketplace
+
+---
+
+## Table of Contents
+
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Installation](#installation)
+- [Repository overview](#repository-overview)
+- [Screenshots](#screenshots)
+- [Author Info](#author-info)
+
+---
+
+## Description
+
+This project is a Web3 test marketplace deployed on the Rinkeby test network on the Ethereum blockchain. It showcases a list of courses which are available for purchase at a cost of $15 USD each (paid in its correspondent value in ETH).
+IMPORTANT NOTE: The content of the course is not available since it is the result of a project meant for web3 develop learning purposes only.
+
+## Technologies used:
+
+- Solidity
+- Truffle
+- Ganache
+- Web3.js
+- Next JS
+- Tailwind
+- Infura endpoint
+- Ethereum blockchain
+
+[Back To The Top](#web3-course-marketplace)
+
+---
+
+## How To Use
+
+For interaction with the project, the users must have a wallet connected to the browser, and some test ETH if you want to purchase a course\*. Metamask was the wallet used for development and testing of this course marketplace.
+
+\* You can get Rinkeby test ETH [HERE](https://faucets.chain.link/rinkeby)
+
+1.- Log in with your Metamask account and make sure that:
+
+&nbsp; &nbsp; &nbsp; a) You are on the Rinkeby Test Network, and
+
+![Imgur](https://i.imgur.com/L45pKPm.png)
+
+&nbsp; &nbsp; &nbsp; b) You have connected your account to the Dapplication by clicking the "Connect" button.
+
+![Imgur](https://i.imgur.com/MuwUoPG.png)
+
+2.- You can freely browse the page, and go to the Marketplace tab to purchase a course you're interested in.
+
+![Imgur](https://i.imgur.com/HSrQNVi.png)
+
+3.- Once you found the course you're looking for, click on the "Purchase" button and submit your email address. If you want to, you can increase the amount of ETH willing to spend for the course.
+
+![Imgur](https://i.imgur.com/KhSkfIp.png)
+
+![Imgur](https://i.imgur.com/k1iMTIX.png)
+
+After purchasing, the course will be in a "Pending" state.
+
+![Imgur](https://i.imgur.com/e6OMdxz.png)
+
+4.- For activating the course, you must send the proof generated for the course (with the Keccak256 hashing function) from the email address used for the purchase to the email address specified on the message on the course page.
+
+![Imgur](https://i.imgur.com/hnk34HT.png)
+
+For the activation, the marketplace administrator will verify that the email address and the proof generated at the moment of purchase match. If they do, the course will be immediately activated. If they don't the course will be in a "Deactivated" state and the buyer of the course must "repurchase" the course (paying only the gas fees), and proceed with the verification process once again.
+
+![Imgur](https://i.imgur.com/xlhQxqW.png)
+
+![Imgur](https://i.imgur.com/nk81qQy.png)
+
+![Imgur](https://i.imgur.com/v2kuBKV.png)
+
+5.- Once activated, the courses are permanently owned by the user's address.
+
+![Imgur](https://i.imgur.com/ZwOfVZQ.png)
+
+<!-- IMAGE HERE -->
+
+[Back To The Top](#web3-course-marketplace)
+
+## Installation
+
+- For testing this application on a local environment, you will need to clone this repository and run the following commands on the root folder for installing dependencies and running the local server:
 
 ```bash
+npm i
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- For creating a build production of the project, you may run the command
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## References
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This project is the result of the content of Udemy's [Solidity & Ethereum in React (Next JS): The Complete Guide](https://www.udemy.com/course/solidity-ethereum-in-react-next-js-the-complete-guide/) course.
 
-## Learn More
+[Back To The Top](#web3-course-marketplace)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author Info
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Twitter - [@juanxavier](https://twitter.com/juanxavier)
+- LinkedIn - [juanxaviervalverde](https://www.linkedin.com/in/juanxaviervalverde/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Back To The Top](#web3-course-marketplace)
