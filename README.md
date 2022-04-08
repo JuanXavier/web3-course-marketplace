@@ -9,10 +9,13 @@
 ## Table of Contents
 
 - [Description](#description)
+
 - [How To Use](#how-to-use)
+
 - [Installation](#installation)
-- [Repository overview](#repository-overview)
-- [Screenshots](#screenshots)
+
+- [References](#references)
+
 - [Author Info](#author-info)
 
 ---
